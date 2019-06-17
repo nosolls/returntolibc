@@ -20,3 +20,8 @@ RUN chmod 0400 /etc/sudoers.d/hackersudo
 # Copies files to directory
 COPY --chown=1000:100 retlib.c $HOME/
 COPY --chown=1000:100 exploit.c $HOME/
+
+# Sets directory for client
+WORKDIR $HOME
+
+CMD ["start-notebook.sh","--NotebookApp.token="]
