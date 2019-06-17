@@ -16,3 +16,7 @@ RUN apt update && \
 # Allows user to run certain commands under sudo
 ADD hackersudo /etc/sudoers.d/
 RUN chmod 0400 /etc/sudoers.d/hackersudo
+
+# Copies files to directory
+COPY --chown=1000:100 retlib.c $HOME/
+COPY --chown=1000:100 exploit.c $HOME/
