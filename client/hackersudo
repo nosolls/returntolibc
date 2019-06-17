@@ -1,0 +1,1 @@
+jovyan ALL=(root) NOPASSWD: /sbin/sysctl

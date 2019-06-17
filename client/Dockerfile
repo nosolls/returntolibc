@@ -3,3 +3,16 @@ FROM jupyter/base-notebook:61d8aaedaeaf
 
 # File Creator
 MAINTAINER Noah Oller Smith <nollersm@purdue.edu>
+
+USER root
+
+# Updates and installs needed packages for user
+RUN apt update && \
+	apt install -y \
+	gcc \
+	procps \
+	gdb
+
+# Allows user to run certain commands under sudo
+ADD hackersudo /etc/sudoers.d/
+RUN chmod 0400 /etc/sudoers.d/hackersudo
