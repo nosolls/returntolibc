@@ -1,3 +1,2 @@
-jovyan ALL=(root) NOPASSWD: /sbin/sysctl
 jovyan ALL=(root) NOPASSWD: /bin/chmod
 jovyan ALL=(root) NOPASSWD: /bin/chown
