@@ -18,7 +18,3 @@ spec:
     image: rkalyana/arpspoof-hacker
     ports:
     - containerPort: 8888
-    securityContext:
-      capabilities:
-        add:
-- NET_ADMIN
