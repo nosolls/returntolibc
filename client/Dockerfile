@@ -10,8 +10,8 @@ USER root
 RUN apt update && \
 	apt install -y \
 	gcc \
-	procps \
-	gdb
+	gdb \
+	nasm
 
 # Allows user to run certain commands under sudo
 ADD hackersudo /etc/sudoers.d/
