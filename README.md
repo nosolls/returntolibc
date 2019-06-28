@@ -30,7 +30,7 @@ docker build -t <image tag of your choice> .
 
 After building the image, it needs to be ran under certain conditions. To run:
 ```bash
-docker run --privileged -d -p 8888 client
+docker run d -p 8888 client
 ```
 
 ### Usage
