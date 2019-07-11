@@ -13,6 +13,10 @@ RUN apt update && \
 	gdb \
 	nasm
 
+# Installs PEDA 
+RUN git clone https://github.com/longld/peda.git ~/peda
+RUN echo "source ~/peda/peda.py" >> ~/.gdbinit
+
 # Allows user to run certain commands under sudo
 ADD hackersudo /etc/sudoers.d/
 RUN chmod 0400 /etc/sudoers.d/hackersudo
