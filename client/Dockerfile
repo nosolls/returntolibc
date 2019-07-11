@@ -11,6 +11,7 @@ RUN apt update && \
 	apt install -y \
 	gcc \
 	gdb \
+	git \
 	nasm
 
 # Installs PEDA 
