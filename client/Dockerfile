@@ -2,7 +2,7 @@
 FROM jupyter/base-notebook:61d8aaedaeaf
 
 # File Creator
-MAINTAINER Noah Oller Smith <nollersm@purdue.edu>
+MAINTAINER Noah Oller Smith <nosolls@protonmail.com>
 
 USER root
 
