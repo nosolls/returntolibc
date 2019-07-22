@@ -15,7 +15,7 @@ If you are a teacher in cybersecurity or a field related to it, this is a good o
 If you are a student in cybersecurity or a field related to it, it's important to understand the layers of protection that go into preventing an attacker from gaining root access on a machine. This gives you experience with looking into how to remove these layers and making a machine vulnerable.
 
 ## Design and Architecture
-This lab makes use of only one container, which is the client. It will install all of the programs you need once it is built. The user will use a VNC client. 
+This lab makes use of only one container, which is the client. It will install all of the programs you need once it is built. The user will use Jupyter. 
 
 Do not worry about access to sudo. If the lab specifies you need to use a command with sudo, you will be able to do so for that command. The instructions will note if there's an alternative to any command needed for the containers.
 
@@ -30,7 +30,7 @@ docker build -t <image tag of your choice> .
 
 After building the image, it needs to be ran under certain conditions. To run:
 ```bash
-docker run -d -p 80 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined <image tag name>
+docker run -d -p 8888 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined <image tag name>
 ```
 
 ### Usage
