@@ -30,7 +30,7 @@ docker build -t <image tag of your choice> .
 
 After building the image, it needs to be ran under certain conditions. To run:
 ```bash
-docker run -d -p 80 client
+docker run -d -p 80 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined <image tag name>
 ```
 
 ### Usage
