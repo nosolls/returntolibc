@@ -1,2 +1,2 @@
-hacker ALL=(root) NOPASSWD: /bin/chmod
-hacker ALL=(root) NOPASSWD: /bin/chown
+jovyan ALL=(root) NOPASSWD: /bin/chmod
+jovyan ALL=(root) NOPASSWD: /bin/chown
