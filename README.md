@@ -34,4 +34,4 @@ docker run -d -p 8888 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined <im
 ```
 
 ### Usage
-CHEESEHub has the instructions available.
+After going to the URL, you'll find Jupyter on your webpage. CHEESEHub has the instructions provided by the [SEED Project](https://seedsecuritylabs.org/index.html). The user will have to compile the programs available, and figure out how to carry out the steps in the instructions. Jupyter has a terminal and text editor. This text editor does have vim keybindings and more if you prefer them.
